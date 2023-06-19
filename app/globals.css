@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -25,3 +27,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@font-face {
+  font-family:'Rubiklso' ;
+  src: url(/ai-bhabha/public/font/RubikIso-Regular.woff2) format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+ 
+
