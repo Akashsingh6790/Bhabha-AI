@@ -6,7 +6,7 @@ function Footer() {
 
         <div className="flex justify-between flex-col-reverse md:flex md:flex-row">
             <div className="flex justify-center flex-col mx-auto items-center space-x-5 mt-6 md:flex md:items-start">
-            © Chat Browser 2023. All Rights reserved.
+            © Bhabha AI 2023. All Rights reserved.
             <div className='flex space-x-8'>
             <a href="/terms-conditions">
                 <div className="underline mt-3">Terms and Conditions</div>

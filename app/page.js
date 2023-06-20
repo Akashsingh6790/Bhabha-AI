@@ -3,19 +3,22 @@ export const runtime = 'edge'
 import Image from 'next/image'
 import Link from 'next/link';
 import './globals.css'
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Welcome from './components/Welcome';
 
 
 export default function home() {
   return (
 <div>
+        
         <Navbar />
-        <img
-            src="Home-Backgroung.jpg"
-            className="h-25"
-            alt=""
-          />
+        
+        <div className='h-20'></div>
+        <div className='min-h-screen bg-[#131528]'>
+        <Welcome />
+        </div>
+        
         <Footer />
 </div>
   
