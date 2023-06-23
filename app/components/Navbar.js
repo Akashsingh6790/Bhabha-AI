@@ -7,7 +7,7 @@ import React from 'react'
 function Navbar() {
   return (
 
-    <nav className="border-gray-200 h-20 lg:px-6 bg-[#000000] py-5 md:py-1  fixed w-full top-0 z-10">
+    <nav className="border-gray-200 h-20 lg:px-6 bg-[#131528] py-5 md:py-1  fixed w-full top-0 z-10">
     <div className="container flex flex-wrap items-center justify-between mx-5">
       <div className="flex items-center">
         <a href="/" className="flex items-center">
@@ -28,22 +28,22 @@ function Navbar() {
         <ul className="flex space-x-4 ">
           <li>
             <Link href="/blog">
-              <span className="text-gray-300 hover:text-white text-xl hover:u cursor-pointer mx-3 transform hover:-rotate-1 duration-500">Blog</span>
+              <span className="text-gray-300 hover:underline hover:text-white text-xl hover:u cursor-pointer mx-3 transform hover:-rotate-1 duration-500">Blog</span>
             </Link>
           </li>
           <li>
             <Link href="/product">
-              <span className="text-gray-300 hover:text-white text-xl hover:u cursor-pointer mx-3">Product</span>
+              <span className="text-gray-300 hover:underline hover:text-white text-xl hover:u cursor-pointer mx-3">Product</span>
             </Link>
           </li>
           <li>
             <Link href="/API">
-              <span className="text-gray-300 hover:text-white text-xl hover:u cursor-pointer mx-3 transform hover:-rotate-1 duration-500">API</span>
+              <span className="text-gray-300 hover:underline hover:text-white text-xl hover:u cursor-pointer mx-3 transform hover:-rotate-1 duration-500">API</span>
             </Link>
           </li>
           <li>
             <Link href="/about">
-              <span className="text-gray-300 hover:text-white text-xl hover:u cursor-pointer mx-3">About</span>
+              <span className="text-gray-300 hover:underline hover:text-white text-xl hover:u cursor-pointer mx-3">About</span>
             </Link>
           </li>
           <li>
