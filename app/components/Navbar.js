@@ -4,20 +4,11 @@ import Link from 'next/link';
 import React from 'react'
 
 
-import { useRouter } from "next/navigation";
-import { useState } from 'react';
+
 
 
 function Navbar() {
-  const router = useRouter();
-  const [signOutText, setSignOutText] = useState('Sign Out');
-
-  const handleSignOut = async () => {
-    setSignOutText('Signing Out');
-    // Perform any necessary cleanup or additional actions
-    // Redirect the user to the home page
-    await router.push("/");
-  };
+  
   return (
 
     <nav className="border-gray-200 h-20 lg:px-6 bg-[#131528] py-5 md:py-1  fixed w-full top-0 z-10">
