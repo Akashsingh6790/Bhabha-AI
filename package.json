@@ -11,12 +11,18 @@
   "dependencies": {
     "autoprefixer": "10.4.14",
     "eslint": "8.42.0",
-    "eslint-config-next": "13.4.6",
+    "eslint-config-next": "^12.0.4",
     "next": "13.4.6",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+<<<<<<< HEAD
     "tailwindcss": "3.3.2",
+=======
+    "react-typewriter-effect": "^1.1.0",
+    "tailwindcss": "3.3.2",
+    "typeit": "^8.7.1",
+>>>>>>> b5ca3df802d82605d68db0f3bd3bd4c357101bd4
     "typewriter-effect": "^2.20.1"
   }
 }
