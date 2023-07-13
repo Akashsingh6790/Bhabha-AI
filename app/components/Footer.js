@@ -58,10 +58,10 @@ function Footer() {
         <div className="flex justify-center flex-col mx-auto items-center space-y-5 md:flex md:items-start">
         
         <div className='flex-col'>
-        <a href="https://chatbrowser.io/" target='/blank'>
+        <a href="https://chatbrowser.io/" target='_blank'>
             <div className="hover:underline mt-3">Chat Browser</div>
         </a>
-        <a href="https://dreamqr.art/" target='/blank'>
+        <a href="https://dreamqr.art/" target='_blank'>
             <div className="hover:underline mt-3">Dream-QR</div>
         </a>
         <a href="/">
