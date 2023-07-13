@@ -7,7 +7,7 @@ function Welcome(){
           <div >
           <img
             src="bgw.jpg"
-            className='h-full w-full'
+            className='h-1/2 w-full'
             alt=""
           />
           </div>

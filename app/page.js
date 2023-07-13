@@ -5,7 +5,7 @@ import './globals.css'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Welcome from './components/Welcome';
-
+import Newsletter from './components/Newsletter';
 
 
 export default function home() {
@@ -18,7 +18,7 @@ export default function home() {
         <div className='min-h-screen bg-[#131528]'>
         <Welcome />
         </div>
-        
+        <Newsletter/>
         <Footer />
 </div>
   
