@@ -2,34 +2,37 @@
 import Link from 'next/link';
 
 import React from 'react'
-
-
-
+import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
+import {useState} from "react";
 
 
 function Navbar() {
-  
+  const [menuOpen, setMenuOpen] = useState(false)
+  const handleNav = () =>{
+      setMenuOpen(!menuOpen);
+  }
+
   return (
 
-    <nav className="border-gray-200 h-20 lg:px-6 bg-[#131528] py-5 md:py-1  fixed w-full top-0 z-10">
-    <div className="container flex flex-wrap items-center justify-between mx-5">
-      <div className="flex items-center">
-        <a href="/" className="flex items-center">
+      <nav className='fixed w-full h-24 shadow-xl bg-black'>
+      <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
+        <div>
+        <Link href="/" className="flex items-center">
           <img
             src="logo.svg"
             className="h-25"
             alt=""
           />
-          <span className="self-center text-3xl font-rubiklso font-bold whitespace-nowrap text-[#f9fafd] -mx-5 "  >
+          <span className="self-center text-3xl font-rubiklso font-bold whitespace-nowrap text-white -mx-5 "  >
           
             <span>Bhabha</span>
             <span className='relative top-2 text-[#7964F6]'>&#x2022;</span>
             <span>AI</span>
           </span>
-        </a>
-      </div>
-      <div>
-        <ul className="flex space-x-4 ">
+        </Link>
+        </div>
+        <div className="hidden md:flex">
+        <ul className="hidden md:flex space-x-2">
           <li>
             <Link href="/blog">
               <span className="text-gray-300 hover:underline hover:text-white text-xl hover:u cursor-pointer mx-3 transform hover:-rotate-1 duration-500">Blog</span>
@@ -51,7 +54,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-          <div className="md:block mx-5 flex transform  ">
+          <div className=" mx-5 flex transform  ">
           <a href="#">
             <button className="flex px-2.5 pt-px pb-0.5 border-white border-solid border-2 text-xl text-white hover:bg-white hover:text-black justify-center items-center">
               <span>Sign in</span>
@@ -62,13 +65,81 @@ function Navbar() {
         </li>
           
         </ul>
-        
-
+        </div>
+        <div onClick={handleNav} className='md:hidden cursor-pointer pl-24'>
+          <AiOutlineMenu size={25} />
+        </div>
       </div>
-    </div>
-    
-  </nav>
-
+      <div className={
+        menuOpen
+        ? "fixed left-0 top-0 w-[65%] md:hidden h-screen bg-black p-10 ease-in duration-500"
+        : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+      }>
+        <div className='flex w-full items-center justify-end'>
+        <div onClick={handleNav} className='cursor-pointer'>
+          <AiOutlineClose size={25} />
+        </div>
+        </div>
+        <div className='flex-col py-4'>
+          <ul>
+            <Link href="/">
+              <li
+              onClick={() => setMenuOpen(false)}
+              className='py-4 cursor-pointer'
+              >
+              Home
+              </li>
+            </Link>
+            <Link href="/blog">
+              <li
+              onClick={() => setMenuOpen(false)}
+              className='py-4 cursor-pointer'
+              >
+              Blog
+              </li>
+            </Link><Link href="/product">
+              <li
+              onClick={() => setMenuOpen(false)}
+              className='py-4 cursor-pointer'
+              >
+              Product
+              </li>
+            </Link>
+            <Link href="/API">
+              <li
+              onClick={() => setMenuOpen(false)}
+              className='py-4 cursor-pointer'
+              >
+              API
+              </li>
+            </Link>
+            <Link href="/about">
+              <li
+              onClick={() => setMenuOpen(false)}
+              className='py-4 cursor-pointer'
+              >
+              About
+              </li>
+            </Link>
+          </ul>
+        </div>
+        <div>
+        <Link href="/" className="flex items-center">
+          <img
+            src="logo.svg"
+            className="h-20"
+            alt=""
+          />
+          <span className="self-center text-3xl font-rubiklso font-bold whitespace-nowrap text-white -mx-5 "  >
+          
+            <span>Bhabha</span>
+            <span className='relative top-2 text-[#7964F6]'>&#x2022;</span>
+            <span>AI</span>
+          </span>
+        </Link>
+        </div>
+      </div>
+      </nav>
 
     )};
 

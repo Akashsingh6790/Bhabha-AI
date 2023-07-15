@@ -1,8 +1,6 @@
 import { Container } from 'postcss'
 import React from 'react'
 
-
-
 function Footer() {
   return (
     <footer className="bg-[#222848] py-1 text-white w-full font-lora">
@@ -14,22 +12,14 @@ function Footer() {
         <a href="/terms-conditions">
             <div className="hover:underline mt-3">Terms and Conditions</div>
         </a>
-  
         <a href="/terms-conditions">
             <div className="hover:underline mt-3">Refund</div>
         </a>
         <a href="/privacy">
             <div className="hover:underline mt-3">Privacy</div>
         </a>
+        </div> 
         </div>
-        
-        </div>
-
-
-
-
-
-
 
         <div className="flex justify-center flex-col mx-auto items-center">
         
@@ -52,11 +42,7 @@ function Footer() {
         
         </div>
 
-
-
-
-        <div className="flex justify-center flex-col mx-auto items-center space-y-5 md:flex md:items-start">
-        
+        <div className="flex justify-center flex-col mx-auto items-center space-y-5 md:flex md:items-start"> 
         <div className='flex-col'>
         <a href="https://chatbrowser.io/" target='_blank'>
             <div className="hover:underline mt-3">Chat Browser</div>
@@ -66,17 +52,11 @@ function Footer() {
         </a>
         <a href="/">
             <div className="underline mt-3">Back to top &#8593;</div>
-        </a>
-        
+        </a>     
         </div>
         </div>
-
-
-
     </div>
 </footer>
-
   )
 }
-
 export default Footer
