@@ -23,7 +23,7 @@ function Navbar() {
             className="h-25"
             alt=""
           />
-          <span className="self-center text-3xl font-rubiklso font-bold whitespace-nowrap text-white -mx-5 "  >
+          <span className="self-center text-2xl sm:text-3xl font-rubiklso font-bold whitespace-nowrap text-white -mx-5 "  >
           
             <span>Bhabha</span>
             <span className='relative top-2 text-[#7964F6]'>&#x2022;</span>
@@ -67,79 +67,24 @@ function Navbar() {
         </ul>
         </div>
         <div onClick={handleNav} className='md:hidden cursor-pointer pl-24'>
-          <AiOutlineMenu size={25} />
+          <AiOutlineMenu size={30} />
         </div>
       </div>
       <div className={
         menuOpen
-        ? "fixed left-0 top-0 w-[90%] md:hidden h-screen bg-black p-10 ease-in duration-500"
-        : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+        ? "fixed left-0 top-0 w-[100%] md:hidden h-screen bg-slate-900 p-5 duration-500 "
+        : "fixed left-[100%] top-0 p-10 ease-in duration-500"
       }>
-        <div className='flex w-full items-center justify-end'>
-        <div onClick={handleNav} className='cursor-pointer'>
-          <AiOutlineClose size={25} />
-        </div>
-        </div>
-        <div className='flex-col py-4'>
-          <ul>
-            <Link href="/">
-              <li
-              onClick={() => setMenuOpen(false)}
-              className='py-4 cursor-pointer'
-              >
-              Home
-              </li>
-            </Link>
-            <Link href="/blog">
-              <li
-              onClick={() => setMenuOpen(false)}
-              className='py-4 cursor-pointer'
-              >
-              Blog
-              </li>
-            </Link><Link href="/product">
-              <li
-              onClick={() => setMenuOpen(false)}
-              className='py-4 cursor-pointer'
-              >
-              Product
-              </li>
-            </Link>
-            <Link href="/API">
-              <li
-              onClick={() => setMenuOpen(false)}
-              className='py-4 cursor-pointer'
-              >
-              API
-              </li>
-            </Link>
-            <Link href="/about">
-              <li
-              onClick={() => setMenuOpen(false)}
-              className='py-4 cursor-pointer'
-              >
-              About
-              </li>
-            </Link>
-            <Link href="/about">
-              <li
-              onClick={() => setMenuOpen(false)}
-              className='py-4 cursor-pointer'
-              >
-              Sign in &#8599;
-              </li>
-            </Link>
-            
-          </ul>
-        </div>
-        <div>
+        <div className='flex w-full items-center justify-between pb-7'>
+        
+        <div className='flex items-center justify-items-start -ml-9'>
         <Link href="/" className="flex items-center">
           <img
             src="logo.svg"
             className="h-20"
             alt=""
           />
-          <span className="self-center text-3xl font-rubiklso font-bold whitespace-nowrap text-white -mx-5 "  >
+          <span className="text-2xl font-rubiklso font-bold whitespace-nowrap text-white -mx-5 "  >
           
             <span>Bhabha</span>
             <span className='relative top-2 text-[#7964F6]'>&#x2022;</span>
@@ -147,6 +92,73 @@ function Navbar() {
           </span>
         </Link>
         </div>
+        <div onClick={handleNav} className='cursor-pointer justify-items-end'>
+          <AiOutlineClose size={30} />
+        </div>
+        </div>
+        
+        <div className='flex-col justify-center items-center py-4'>
+          <ul>
+           <hr></hr>
+            <Link href="/">
+              <li
+              onClick={() => setMenuOpen(false)}
+              className='py-2.5 font-bold cursor-pointer text-xl hover:underline'
+              >
+              Home
+              </li>
+            </Link>
+            <hr></hr>
+            <Link href="/blog">
+              <li
+              onClick={() => setMenuOpen(false)}
+              className='py-2.5 font-bold cursor-pointer text-xl hover:underline'
+              >
+              Blog
+              </li>
+            </Link>
+            <hr></hr>
+            <Link href="/product">
+              <li
+              onClick={() => setMenuOpen(false)}
+              className='py-2.5 font-bold cursor-pointer text-xl hover:underline'
+              >
+              Product
+              </li>
+            </Link>
+            <hr></hr>
+            <Link href="/API">
+              <li
+              onClick={() => setMenuOpen(false)}
+              className='py-2.5 font-bold cursor-pointer text-xl hover:underline'
+              >
+              API
+              </li>
+            </Link>
+            <hr></hr>
+            <Link href="/about">
+              <li
+              onClick={() => setMenuOpen(false)}
+              className='py-2.5 font-bold cursor-pointer text-xl hover:underline'
+              >
+              About
+              </li>
+            </Link>
+            <hr></hr>
+            <li className='pt-16 flex justify-center items-center align-middle justify-items-center'>
+          <div className=" mx-5 flex transform  ">
+          <a href="#">
+            <button className="flex px-2.5 pt-px pb-0.5 border-white border-solid border-2 text-2xl hover:text-white text-orange-400 justify-center items-center">
+              <span>Sign in</span>
+              <span className='ml-1 text-lg'>&#8599;</span>
+            </button>
+          </a>
+        </div>
+        </li>
+            
+          </ul>
+        </div>
+        
       </div>
       </nav>
 
