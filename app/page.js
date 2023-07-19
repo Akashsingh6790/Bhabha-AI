@@ -8,16 +8,17 @@ import Welcome from './components/Welcome';
 import Newsletter from './components/Newsletter';
 
 
+
 export default function home() {
   return (
 <div>
         
         <Navbar />
         
-        <div className='h-20'></div>
-        <div className='min-h-screen bg-[#131528]'>
+        <div className='h-24'></div>
+        <div className='h-12'></div>
         <Welcome />
-        </div>
+    
         <Newsletter/>
         <Footer />
 </div>

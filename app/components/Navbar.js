@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
 
-      <nav className='fixed w-full h-24 shadow-xl bg-black'>
+      <nav className='fixed w-full z-10 h-24 shadow-xl bg-[#181a2b]'>
       <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
         <div>
         <Link href="/" className="flex items-center">
@@ -48,7 +48,7 @@ function Navbar() {
               <span className="text-gray-300 hover:underline hover:text-white text-xl hover:u cursor-pointer mx-3 transform hover:-rotate-1 duration-500">API</span>
             </Link>
           </li>
-          <li>
+          <li className='hidden lg:flex'>
             <Link href="/about">
               <span className="text-gray-300 hover:underline hover:text-white text-xl hover:u cursor-pointer mx-3">About</span>
             </Link>
@@ -56,7 +56,7 @@ function Navbar() {
           <li>
           <div className=" mx-5 flex transform  ">
           <a href="#">
-            <button className="flex px-2.5 pt-px pb-0.5 border-white border-solid border-2 text-xl text-white hover:bg-white hover:text-black justify-center items-center">
+            <button className="flex px-2.5 pt-px pb-0.5 border-white border-solid border-2 text-xl text-white hover:text-orange-400 justify-center items-center">
               <span>Sign in</span>
               <span className='ml-1 text-lg'>&#8599;</span>
             </button>
@@ -72,7 +72,7 @@ function Navbar() {
       </div>
       <div className={
         menuOpen
-        ? "fixed left-0 top-0 w-[65%] md:hidden h-screen bg-black p-10 ease-in duration-500"
+        ? "fixed left-0 top-0 w-[90%] md:hidden h-screen bg-black p-10 ease-in duration-500"
         : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
       }>
         <div className='flex w-full items-center justify-end'>
@@ -121,6 +121,15 @@ function Navbar() {
               About
               </li>
             </Link>
+            <Link href="/about">
+              <li
+              onClick={() => setMenuOpen(false)}
+              className='py-4 cursor-pointer'
+              >
+              Sign in &#8599;
+              </li>
+            </Link>
+            
           </ul>
         </div>
         <div>
