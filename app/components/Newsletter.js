@@ -4,8 +4,8 @@ function Newsletter() {
     return (
         
        <div className="bg-white w-full">
-        <div className="text-4xl sm:text-5xl text-purple-700 font-bold text-center pt-9">Follow our journey</div>
-       <div className=" bg-white text-xl text-purple-700 text-center mt-8">Sign Up with your email address to receive news and updates.</div>
+        <div className="text-4xl sm:text-5xl 2xl:text-6xl text-purple-700 font-bold text-center pt-9">Follow our journey</div>
+       <div className=" bg-white text-xl 2xl:text-2xl text-purple-700 text-center mt-8">Sign Up with your email address to receive news and updates.</div>
 
      <div className='bg-white flex justify-center'>
       <form className="flex flex-col sm:flex-row justify-center items-center mt-5">
@@ -21,7 +21,7 @@ function Newsletter() {
 </form>
 </div>
 
-<div className='bg-white text-purple-700 text-xl text-center mt-8 h-full pb-9'>We respect your privacy. Please read our Terms and Conditions & Privacy pages to learn more. </div>
+<div className='bg-white text-purple-700 text-xl 2xl:text-2xl text-center mt-8 h-full pb-9'>We respect your privacy. Please read our Terms and Conditions & Privacy pages to learn more. </div>
 
 
 

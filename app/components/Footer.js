@@ -8,7 +8,7 @@ function Footer() {
     <div className="hidden md:flex">
         <div className="flex justify-center flex-col mx-auto items-center space-y-5 ">
         
-        <div className='flex-col'>
+        <div className='flex-col 2xl:text-xl'>
         <a href="/terms-conditions">
             <div className="hover:underline mt-3">Terms and Conditions</div>
         </a>
@@ -21,7 +21,7 @@ function Footer() {
         </div> 
         </div>
 
-        <div className="flex justify-center flex-col mx-auto items-center">
+        <div className="flex justify-center flex-col mx-auto 2xl:text-xl items-center">
         
         <div className="flex justify-center items-center text-2xl m-2">contact@bhabha.ai</div>
     <div className="h-12 md:h-11 flex justify-center items center m-2" >
@@ -42,7 +42,7 @@ function Footer() {
         
         </div>
 
-        <div className="flex justify-center flex-col mx-auto items-center space-y-5 md:flex md:items-start"> 
+        <div className="flex justify-center flex-col mx-auto 2xl:text-xl items-center space-y-5 md:flex md:items-start"> 
         <div className='flex-col'>
         <a href="https://chatbrowser.io/" target='_blank'>
             <div className="hover:underline mt-3">Chat Browser</div>

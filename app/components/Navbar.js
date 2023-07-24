@@ -23,7 +23,7 @@ function Navbar() {
             className="h-25"
             alt=""
           />
-          <span className="self-center text-2xl sm:text-3xl font-rubiklso font-bold whitespace-nowrap text-white -mx-5 "  >
+          <span className="self-center text-2xl sm:text-3xl 2xl:text-4xl font-rubiklso font-bold whitespace-nowrap text-white -mx-5 "  >
           
             <span>Bhabha</span>
             <span className='relative top-2 text-[#7964F6]'>&#x2022;</span>
@@ -35,28 +35,28 @@ function Navbar() {
         <ul className="hidden md:flex space-x-2">
           <li>
             <Link href="/blog">
-              <span className="text-gray-300 hover:underline hover:text-white text-xl hover:u cursor-pointer mx-3 transform hover:-rotate-1 duration-500">Blog</span>
+              <span className="text-gray-300 hover:underline hover:text-white text-xl 2xl:text-2xl hover:u cursor-pointer mx-3 transform hover:-rotate-1 duration-500">Blog</span>
             </Link>
           </li>
           <li>
             <Link href="/product">
-              <span className="text-gray-300 hover:underline hover:text-white text-xl hover:u cursor-pointer mx-3">Product</span>
+              <span className="text-gray-300 hover:underline hover:text-white text-xl 2xl:text-2xl hover:u cursor-pointer mx-3">Product</span>
             </Link>
           </li>
           <li>
             <Link href="/API">
-              <span className="text-gray-300 hover:underline hover:text-white text-xl hover:u cursor-pointer mx-3 transform hover:-rotate-1 duration-500">API</span>
+              <span className="text-gray-300 hover:underline hover:text-white text-xl 2xl:text-2xl hover:u cursor-pointer mx-3 transform hover:-rotate-1 duration-500">API</span>
             </Link>
           </li>
           <li className='hidden lg:flex'>
             <Link href="/about">
-              <span className="text-gray-300 hover:underline hover:text-white text-xl hover:u cursor-pointer mx-3">About</span>
+              <span className="text-gray-300 hover:underline hover:text-white text-xl 2xl:text-2xl hover:u cursor-pointer mx-3">About</span>
             </Link>
           </li>
           <li>
           <div className=" mx-5 flex transform  ">
           <a href="#">
-            <button className="flex px-2.5 pt-px pb-0.5 border-white border-solid border-2 text-xl text-white hover:text-orange-400 justify-center items-center">
+            <button className="flex px-2.5 pt-px pb-0.5 border-white border-solid border-2 text-xl 2xl:text-2xl text-white hover:text-orange-400 justify-center items-center">
               <span>Sign in</span>
               <span className='ml-1 text-lg'>&#8599;</span>
             </button>
